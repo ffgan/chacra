@@ -50,7 +50,7 @@ class Binary(Base):
     def __init__(self, name, project, repo=None, **kw):
         self.name = name
         self.project = project
-        now = datetime.datetime.now(datetime.UTC)
+        now = datetime.datetime.now(datetime.timezone.utc)
         self.created = now
         self.modified = now
         self.sha1 = kw.get('sha1', 'head')

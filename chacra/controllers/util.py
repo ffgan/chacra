@@ -1,11 +1,6 @@
 from datetime import datetime, timedelta, timezone
-import sys
 
-# 为了兼容性，可以这样写：
-if sys.version_info >= (3, 11):
-    from datetime import UTC
-else:
-    UTC = timezone.utc
+UTC = timezone.utc
 
 import logging
 from pecan import conf

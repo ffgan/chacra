@@ -54,7 +54,7 @@ def update_timestamp(mapper, connection, target):
     """
     Automate the 'modified' attribute when a model changes
     """
-    target.modified = datetime.datetime.now(datetime.UTC)
+    target.modified = datetime.datetime.now(datetime.timezone.utc)
 
 
 # Utilities:

@@ -34,7 +34,7 @@ class TestPurgeRepos(object):
             distro_version='7',
             )
 
-        self.now = datetime.datetime.now(datetime.UTC)
+        self.now = datetime.datetime.now(datetime.timezone.utc)
         # slightly old
         self.one_minute = self.now - datetime.timedelta(minutes=1)
         # really old
